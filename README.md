@@ -1,19 +1,20 @@
-<img width=150 align="right" src="https://raw.githubusercontent.com/zakandaiev/vite-frontend-starter/main/src/img/vite-logo.svg" alt="Vite Logo">
+<img width=150 align="right" src="https://raw.githubusercontent.com/makniahmed-31/vite-frontend-starter/main/src/img/vite-logo.svg" alt="Vite Logo">
 
 # Vite FrontEnd Starter
 
 Vite FrontEnd Starter is a boilerplate kit for easy building modern static web-sites using Vite builder
 
 ## Homepage
-[https://zakandaiev.github.io/vite-frontend-starter](https://zakandaiev.github.io/vite-frontend-starter)
+
+[https://makniahmed-31.github.io/vite-frontend-starter](https://makniahmed-31.github.io/vite-frontend-starter)
 
 ## How to use
 
 ### Instalation
 
-``` bash
+```bash
 # Clone the repository
-git clone https://github.com/zakandaiev/vite-frontend-starter.git
+git clone https://github.com/makniahmed-31/vite-frontend-starter.git
 
 # Go to the folder
 cd vite-frontend-starter
@@ -30,14 +31,14 @@ rm -rf .git
 
 ### Development
 
-``` bash
+```bash
 # Start development mode with live-server
 npm run dev
 ```
 
 ### Building
 
-``` bash
+```bash
 # Build static files for production
 npm run build
 # or
@@ -48,20 +49,22 @@ npm run preview
 ```
 
 ## Features
-* Modern Vite environment for development
-* Twig template engine
-* Well thought-out and convenient project structure
-* HTML5 and CSS3 ready
-* SEO friendly
-* SASS/SCSS preprocessor
-* Autoprefixer
-* Live-server with hot-reload
-* HTML, CSS, JS, images auto minifier
-* Ready-to-use Javascript utils, HTML styled components, CSS helpers, SASS utils etc.
-* reseter.css
-* .htaccess, robots.txt, sitemap.xml, favicon
-* 404 page
-* And many more...
+
+- Modern Vite environment for development
+- Twig template engine
+- Well thought-out and convenient project structure
+- HTML5 and CSS3 ready
+- SEO friendly
+- SASS/SCSS preprocessor
+- Autoprefixer
+- Live-server with hot-reload
+- HTML, CSS, JS, images auto minifier
+- Ready-to-use Javascript utils, HTML styled components, CSS helpers, SASS utils etc.
+- reseter.css
+- .htaccess, robots.txt, sitemap.xml, favicon
+- 404 page
+- And many more...
 
 ## TODO
-* vite's config `base` not appends to anchors in html files, so we got the htmlHandleDocsBase() in `vite.config.js` as temp solution
+
+- vite's config `base` not appends to anchors in html files, so we got the htmlHandleDocsBase() in `vite.config.js` as temp solution
