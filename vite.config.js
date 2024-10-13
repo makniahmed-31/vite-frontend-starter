@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import vituum from 'vituum';
 import twig from '@vituum/vite-plugin-twig';
-import viteImagemin from 'vite-plugin-imagemin';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -28,38 +27,6 @@ export default defineConfig({
     twig({
       root: './src',
       globals: getTwigGlobals(),
-    }),
-    viteImagemin({
-      gifsicle: {
-        optimizationLevel: 1,
-        interlaced: false,
-      },
-      optipng: {
-        optimizationLevel: 5,
-      },
-      mozjpeg: {
-        quality: 75, progressive: true,
-      },
-      pngquant: {
-        quality: [0.7, 0.9],
-        speed: 7,
-      },
-      svgo: {
-        plugins: [
-          {
-            name: 'removeViewBox',
-            active: false,
-          },
-          {
-            name: 'convertShapeToPath',
-            active: false,
-          },
-          {
-            name: 'convertEllipseToCircle',
-            active: false,
-          },
-        ],
-      },
     }),
     ViteMinifyPlugin({
       collapseWhitespace: true,
@@ -103,11 +70,19 @@ export default defineConfig({
   server: {
     port: 5173,
     host: false,
+    open:true
   },
   preview: {
     port: 3000,
     host: true,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler'
+      }
+    }
+  }
 });
 
 function getTwigGlobals() {
