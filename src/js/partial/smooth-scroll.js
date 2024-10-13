@@ -1,4 +1,4 @@
-import smoothScroll from '@/js/util/smooth-scroll';
+import smoothScroll from '@/js/util/smoothScroll';
 
 document.addEventListener('DOMContentLoaded', () => {
   const headerHeight = document.getElementById('header')?.offsetHeight || 0;
